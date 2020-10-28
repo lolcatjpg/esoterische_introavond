@@ -7,6 +7,8 @@ the complilation process is as follows:
  
  finally the hash is utf-8 decoded and errors are ignored.
  
+ currently only printing out the hashes is supported, so it's hard to do any real computation in this format, see it more as a proof of work generator
+ 
  example usage:
  
  ```
