@@ -12,7 +12,7 @@ the complilation process is as follows:
  ```
  printf "import hashlib\nprint(bytes.fromhex(hashlib.md5(open('python5').read().strip().encode('utf-8')).hexdigest()).decode('utf-8', errors='ignore'))" > python4
  echo '89452823' > python5
- pyhton3 python4
+ python3 python4
  ```
  
  This prints out `(zeusȣ`
