@@ -1,6 +1,6 @@
 CLS
 Dim s As String
-INPUT "yeet";s
+INPUT "Z voor zeus en C voor corona, en niets als je houdt van dodona";s
 IF s = "Z" THEN
     PRINT ":D"
 ELSEIF s = "C" THEN
