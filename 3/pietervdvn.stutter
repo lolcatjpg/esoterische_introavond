@@ -1,0 +1,2 @@
+fun [loop f] [chain (eval f) (loop f)]
+loop [show "Zeus"]

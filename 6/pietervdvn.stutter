@@ -1,0 +1,2 @@
+fun [multwo x] [+ x x]
+multwo 21

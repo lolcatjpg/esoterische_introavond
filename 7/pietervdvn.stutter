@@ -1,0 +1,1 @@
+fun [reverseStr str] [ (fexpr-str (reverse (str-fexpr str))) ]

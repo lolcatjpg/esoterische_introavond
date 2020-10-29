@@ -1,0 +1,2 @@
+fun [fib n] [if (<= 2 n) [1] [+ (fib (- n 1)) (fib (- n 2))  ] ]
+map fib (irange 0 10)

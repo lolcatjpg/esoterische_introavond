@@ -1,0 +1,1 @@
+fun [teveel n] [if (<= 9999 n) [42] [show "Veel"]]

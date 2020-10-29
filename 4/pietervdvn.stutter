@@ -1,0 +1,4 @@
+fun [smile f] [if (== f "Zeus") [if (== f "Corona") ["-_-"] [":'("] ] [":)"]]
+smile "Zeus"
+smile "Corona"
+smile "Meh"

@@ -1,0 +1,1 @@
+filter (\ [x] [== 0 (imod x 2)]) (irange 0 100)
