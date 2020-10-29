@@ -5,16 +5,16 @@ it reads in a file called python5, reads it's content, removes whitespace before
 the complilation process is as follows:
  - md5hash the code 
  
- finally the hash is utf-8 decoded and errors are ignored.
+ finally the hash is ascii decoded and printed out.
  
  currently only printing out the hashes is supported, so it's hard to do any real computation in this format, see it more as a proof of work generator
  
  example usage:
  
  ```
- printf "import hashlib\nprint(bytes.fromhex(hashlib.md5(open('python5').read().strip().encode('utf-8')).hexdigest()).decode('utf-8', errors='ignore'))" > python4
- echo '89452823' > python5
+ printf "import hashlib\nprint(bytes.fromhex(hashlib.md5(open('python5').read().strip().encode('utf-8')).hexdigest()).decode('ascii', errors='ignore'))" > python4
+ echo '10958639490' > python5
  python3 python4
  ```
  
- This prints out `(zeusȣ`
+ This prints out `zeus`
