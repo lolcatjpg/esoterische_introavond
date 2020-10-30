@@ -1,0 +1,49 @@
+
+// This is a partial, non-working interpreter for brainfuck, written in stutter
+
+fun [ at list i ] [ if ( /= i 0 ) [ head list ] [ at (tail list) ( - i 1 ) ]]
+fun [ setAt list i n ] [ if ( /= i 0 ) [ : n (tail list) ] [ : (head list) (setAt (tail list) ( - i 1 ) n) ]]
+
+
+// THe env is an array of: ptr, data, cmnds, cmndsPtr
+fun [ ptr env ] [ at env 0 ] 
+fun [ data env ] [ at env 1 ] 
+fun [ currData env ] [ at (data env) (ptr env) ] 
+
+fun [ setptr env n ] [ setAt env 0 n ] 
+fun [ setdata env n ] [ setAt env 1 n ] 
+fun [ setcurrData env n ] [ setAt env 1 (setAt (data env) (ptr env) n)] 
+
+
+fun [ cmnds env ] [ at env 2 ] 
+fun [ cmndsPtr env ] [ at env 3 ] 
+fun [ setCmndsPtr env n ] [ setAt env 3 n] 
+fun [ currCmnd env ] [ chain (show env) (at (cmnds env) (cmndsPtr env)) ] 
+
+fun [ moveCurrCmnd diff env] [ setCmndsPtr env (+ (cmndsPtr env) diff) ]
+
+// Initial environment. The -1 indicates we stop
+fun [initEnv program] [list 0 [ 0 ] (++ (str-fexpr program) [ -1 ]) 0]
+
+
+// Move pointer left: modifies the environment
+fun [ moveLeft env] [ if (/= (ptr env) 0) [ setdata env (: 0 (data env)) ] [setptr env (- (ptr env) 1)] ]
+// If we are at the end: expand the data and try moving to the right again
+fun [ moveRight env] [ if (== (+ 1 (ptr env)) (length (data env))) [setptr env (+ (ptr env) 1)] [ moveRight (setdata env (++ (data env) [0])) ]  ]
+
+fun [ incCurrentEnv env ] [ setcurrData env (+ 1 (currData env)) ]
+fun [ decCurrentEnv env ] [ setcurrData env (+ -1 (currData env)) ]
+
+fun [ outputCurr env ] [ chain (show (fexpr-str (list (currData env)) )) env ]
+fun [ inputCurr env ] [ setcurrData env (head (str-fexpr (read 0))) ]
+
+def [openingBrace] (head (str-fexpr "[")) 
+def [closingBrace] (head (str-fexpr "]")) 
+
+// This might not work
+fun [ jmpRight env ] [ if (or (==  (currCmnd env) -1) (== closingBrace (currCmnd env))  ) [ moveCurrCmnd 1 (jmpRight env)] [ moveCurrCmnd 1 env]) ] 
+fun [ jmpRightCond env ] [ if (== 0 (currData env)) [ env ] [ jpmRight env ]  ]
+
+// Further steps: actually match a command with an action and do stuff
+
+fun [interpretBF ptr data cmnds cmndsPtr] [ if (< (length cmnds) cmndsPtr)  ] 

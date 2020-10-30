@@ -1,0 +1,2 @@
+fun [isEven n] [if (== 0 (imod n 2)) ["even, maar dan omgekeerd"] ["Even"]]
+

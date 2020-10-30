@@ -1,0 +1,6 @@
+fun [isDividable primes i] [ /= 0 (length (filter (\ [x] [== 0 (imod i x)]) primes)) ]
+fun [nextPrime primes i] [ if (isDividable primes i) [i] [ nextPrime primes (+ 1 i)] ]
+fun [addPrime primes] [ ++ primes (: (nextPrime primes (+ 1 (last primes))) [ ])  ]
+fun [genPrime n primes] [ if (< (length primes) n) [primes] [genPrime n (addPrime primes)]  ]
+fun [primesSum n] [foldr (\ [a b] [+ a b]) 0 (genPrime n [2])]
+primesSum 92
