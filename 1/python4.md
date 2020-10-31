@@ -13,8 +13,15 @@ the complilation process is as follows:
  
  ```
  printf "import hashlib\nprint(bytes.fromhex(hashlib.md5(open('python5').read().strip().encode('utf-8')).hexdigest()).decode('ascii', errors='ignore'))" > python4
- echo '10958639490' > python5
+ echo '156704301' > python5
  python3 python4
  ```
  
- This prints out `zeus`
+ 
+ This prints out `Zeus`
+
+other numbers that print out zeus:
+
+140612052
+164034371
+10958639490
