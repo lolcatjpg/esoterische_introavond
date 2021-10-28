@@ -49,7 +49,7 @@ Zeus
 (out) 6
 ```
 
-## 6. Je bent een bakker! Je klanten hebben brood gekocht, en je wil optellen hoeveel geld je in totaal ontvangen hebt. Gelukkig kosten hebben alle broden een natuurlijk getal als prijs, en kost een brood maximum 9. Je weet ook dat de totale hoeveelheid geld minder dan 250 is. Neem als input een reeks getallen, output de som. De lijst getallen stopt wanneer je een lege lijn binnenkrijgt.
+## 6. Je bent een bakker! Je klanten hebben brood gekocht, en je wil optellen hoeveel geld je in totaal ontvangen hebt. Gelukkig kosten alle broden een natuurlijk getal als prijs, en is de prijs per brood maximum 9. Je weet ook dat de totale hoeveelheid geld minder dan 250 is. Neem als input een reeks getallen, output de som. De lijst getallen stopt wanneer je een lege lijn binnenkrijgt.
 
 ```
 (in) 5
