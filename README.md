@@ -97,6 +97,8 @@ Zeus
 * BASIC (+)
 * Stutter (+++, geen idee of het werkt, https://github.com/redfast00/stutter))
 * Befunge
+* Javagony (+) (Java, maar met gelimiteerde control-flow, is geldige standaard java code)
+* Argh! (+++)
 
 
 # Extra challenges
@@ -122,5 +124,6 @@ Zeus
 - BASIC: https://www.jdoodle.com/execute-freebasic-online
 - Stutter: roep heel luid "JASPER DIT IS SHIT"
 - Befunge: http://www.quirkster.com/iano/js/befunge.html
+- Argh! http://argh.sha-bang.de/
 
 Kijk ook eens op tio.run voor andere talen.
