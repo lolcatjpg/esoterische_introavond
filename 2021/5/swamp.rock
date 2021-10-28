@@ -1,18 +1,4 @@
-Listen to your heart
-if your heart is "A"
-shout "Klinck"
-
-else if your heart is "E"
-shout "Klinck"
-
-else if your heart is "I"
-shout "Klinck"
-
-else if your heart is "O"
-shout "Klinck"
-
-else if your heart is "U"
-shout "Klinck"
-
-else
-shout "Klonck"
+Listen to my voice
+cast my voice
+put my voice plus 1 into my voice
+shout my voice
