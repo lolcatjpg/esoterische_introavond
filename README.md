@@ -23,63 +23,83 @@ Zeus
 ...
 ```
 
-## 3. Neem 1 hoofdletter input, als het een klinker (A, E, I, O, U) is, print 'Klinck', anders print 'Klonk'
+## 3. Neem een string als input en verander elke hoofdletter naar een kleine letter en vice versa
 
 ```
-(in) A
-(out) Klinck
+(in) ZeusWPI
+(out) zEUSwpi
 ```
-
-```
-(in) B
-(out) Klonk
-```
-
-## 4. Zet lowercase om in uppercase en omgekeerd. Alle andere input (cijfers, spaties, ...) mag je afhandelen zoals je wil.
 
 ```
 (in) WiNA
 (out) wIna
 ```
-
-## 5. Input een getal, tel er 1 bij op en print het uit. De input is een natuurlijk getal (dus groter of gelijk aan nul en geen kommagetal)
-
+## 4. Neem 2 getallen en tel ze op
 ```
-(in) 5
-(out) 6
-```
-
-## 6. Je bent een bakker! Je klanten hebben brood gekocht, en je wil optellen hoeveel geld je in totaal ontvangen hebt. Gelukkig kosten alle broden een natuurlijk getal als prijs, en is de prijs per brood maximum 9. Je weet ook dat de totale hoeveelheid geld minder dan 250 is. Neem als input een reeks getallen, output de som. De lijst getallen stopt wanneer je een lege lijn binnenkrijgt.
-
-```
-(in) 5
-(in) 4
-(in) 2
-(in)
-(out) 11
-```
-
-## 7. Print alle priemgetallen
-
-```
-(out) 2
+(in) 1 2
 (out) 3
-(out) 5
-(out) 7
-(out) 11
-...
 ```
 
-## 8. Inverteer een DNA-streng
+## 5. Reken uit hoeveel mg. caffeine er in _n_ flessen mate van 50cl zit
+```
+(in) 1
+(out) 100
+```
 
 ```
-(in) ATTTGC
-(out) TAAACG 
+(in) 9
+(out) 900
 ```
 
-## 9. Maak een brainfuck-interpreter
+## 6. Print de eerste 10 priemgetallen
 
-## 10. Neem tekst, en print het terug uit als ASCII-art
+```
+2
+3
+5
+7
+9
+11
+13
+17
+19
+23
+29
+```
+
+## 7. Vervang elk voorkomen van macht in een teks door ZeusWPI
+```
+(in) macht organiseerd leuke activiteiten
+(out) ZeusWPI organiseerd leuke activiteiten
+```
+
+## 8. Tel 2 binaire getallen op
+
+```
+(in) 101 + 10
+(out) 111
+```
+
+```
+(in) 11010 + 10
+(out) 1110
+```
+
+## 9. Schrijf of een programma of de haakjes in string gebalanceerd zijn, return 0 als alles klopt anders 0
+gebalanceerd: `(a[bc])`
+ongebalanceerd:`(a[)bc]`
+
+```
+(in) (a[bc])
+(out) 0
+```
+
+```
+(in) (a[)bc]
+(out) 1
+```
+
+## 10. Maak een brainfuck-interpreter in een andere esoterische taal
 
 ## 11. Val het bestuur lastig om meer challenges te maken of contribute aan andere opensource Zeusproject 
 
@@ -100,12 +120,6 @@ Zeus
 * Javagony (+) (Java, maar met gelimiteerde control-flow, is geldige standaard java code)
 * Argh! (+++)
 
-
-# Extra challenges
-
-* Steek een geldig Brainfuck programma in een Dodona-oefening. De oefening moet correct indienen, en de brainfuck code moet "Zeus is cool" printen
-* Steek een geldig whitespace programma in een Dodona-oefening.  De oefening moet correct indienen, en de brainfuck code moet "This is a hidden message" printen
-* Maak een programma die "Brainfuck" print als je het als brainfuck programma uitvoert, en "Whitespace" als je het als whitespace programma uitvoert. Extra props als het eruitziet als het Zeuslogo in ascii-art
 
 ## Hoe dingen uitvoeren
 
