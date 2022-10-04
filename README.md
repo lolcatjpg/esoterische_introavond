@@ -69,8 +69,8 @@ Zeus
 
 ## 7. Vervang elk voorkomen van macht in een tekst door ZeusWPI
 ```
-(in) macht organiseerd leuke activiteiten
-(out) ZeusWPI organiseerd leuke activiteiten
+(in) macht organiseert leuke activiteiten
+(out) ZeusWPI organiseert leuke activiteiten
 ```
 
 ## 8. Tel 2 binaire getallen op
