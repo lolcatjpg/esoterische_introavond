@@ -67,7 +67,7 @@ Zeus
 29
 ```
 
-## 7. Vervang elk voorkomen van macht in een teks door ZeusWPI
+## 7. Vervang elk voorkomen van macht in een tekst door ZeusWPI
 ```
 (in) macht organiseerd leuke activiteiten
 (out) ZeusWPI organiseerd leuke activiteiten
@@ -85,7 +85,7 @@ Zeus
 (out) 1110
 ```
 
-## 9. Schrijf of een programma of de haakjes in string gebalanceerd zijn, return 0 als alles klopt anders 0
+## 9. Schrijf of een programma of de haakjes in string gebalanceerd zijn, return 0 als alles klopt anders 1
 gebalanceerd: `(a[bc])`
 ongebalanceerd:`(a[)bc]`
 
