@@ -162,7 +162,7 @@ ongebalanceerd:`(a[)bc]`
 * Javagony (+) (Java, maar met gelimiteerde control-flow, is geldige standaard java code)
 * Argh! (+++)
 * Piet (+++++)
-* Functio (+++)
+* Funciton (+++)
 
 
 ## Hoe dingen uitvoeren
