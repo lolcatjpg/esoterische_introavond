@@ -1,8 +1,9 @@
+
 Esoterische codenight 11/09
 ===
 
 # Esoterische & Frustrerende programmeertalenavond
-Oplossingen voor de Esoterische Introavond (event 2021)
+Oplossingen voor de Esoterische Introavond (event 2024)
 
 Stel, je naam is fred en je lost de eerste challenge op in BrainFuck, dan kan je een PR maken die een file `<jaar>/1/fred.bf` heet waarin je oplossing zit.
 
@@ -150,7 +151,7 @@ ongebalanceerd:`(a[)bc]`
 * Brainfuck (+++)
 * Sd (moeilijker dan brainfuck)
 * Whitespace (+++++)
-* Maze (+++)
+* Maze (++)
 * JSFuck (++++)
 * RCPU (++), maar kinda lastig om op te zetten (git en Python moeten geinstalleerd zijn, niet getest op Windows) (zie https://github.com/redfast00/RCPU)
 * Shakespeare (++)
@@ -161,6 +162,7 @@ ongebalanceerd:`(a[)bc]`
 * Javagony (+) (Java, maar met gelimiteerde control-flow, is geldige standaard java code)
 * Argh! (+++)
 * Piet (+++++)
+* Functio (+++)
 
 
 ## Hoe dingen uitvoeren
