@@ -149,21 +149,25 @@ ongebalanceerd:`(a[)bc]`
 # Talen
 
 * Brainfuck (+++)
-* Sd (moeilijker dan brainfuck)
+* Functio (+++)
 * Whitespace (+++++)
 * Maze (++)
-* JSFuck (++++)
-* RCPU (++), maar kinda lastig om op te zetten (git en Python moeten geinstalleerd zijn, niet getest op Windows) (zie https://github.com/redfast00/RCPU)
 * Shakespeare (++)
 * Rockstar (++)
 * BASIC (+)
-* Stutter (+++, geen idee of het werkt, https://github.com/redfast00/stutter))
-* Befunge
 * Javagony (+) (Java, maar met gelimiteerde control-flow, is geldige standaard java code)
-* Argh! (+++)
 * Piet (+++++)
-* Funciton (+++)
 
+<details>
+  <summary>Previous Languages</summary>
+    
+  * RCPU (++), maar kinda lastig om op te zetten (git en Python moeten geinstalleerd zijn, niet getest op Windows) (zie https://github.com/redfast00/RCPU)
+  * Stutter (+++, geen idee of het werkt, https://github.com/redfast00/stutter))
+  * Sd (moeilijker dan brainfuck)
+  * JSFuck (++++)
+  * Befunge (++++)
+  * Argh! (+++)
+</details>
 
 ## Hoe dingen uitvoeren
 
